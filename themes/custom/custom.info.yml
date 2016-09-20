@@ -1,0 +1,14 @@
+name: Custom
+type: theme
+description: 'A cuddly theme that offers extra fluffiness.'
+core: 8.x
+base theme: bootstrap
+
+libraries:
+  - custom/global-styling
+
+regions:
+  header: Header
+  content: Content  # the content region is required
+  sidebar_first: 'Sidebar first'
+  footer: Footer
