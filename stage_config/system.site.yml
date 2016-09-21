@@ -1,0 +1,14 @@
+uuid: 8e619efd-7140-4eab-99aa-898f1c6147a6
+name: test
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
