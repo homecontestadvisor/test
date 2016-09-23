@@ -1,0 +1,28 @@
+uuid: da531b10-1c9a-45ff-bbd6-20a11b46e11f
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello_world
+    - node
+  theme:
+    - custom
+id: helloblock
+theme: custom
+region: content
+weight: -8
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello block'
+  provider: hello_world
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
