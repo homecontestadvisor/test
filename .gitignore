@@ -43,4 +43,4 @@ core/phpcs.xml
 core/phpunit.xml
 
 .idea/
-.stage_config/db.sql
+#db_sync/*
