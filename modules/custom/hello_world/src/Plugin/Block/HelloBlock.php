@@ -63,4 +63,14 @@ class HelloBlock extends BlockBase implements BlockPluginInterface{
         $this->setConfigurationValue('name', $form_state->getValue(array('myfieldset', 'hello_block_name')));
 
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function defaultConfiguration() {
+        $default_config = \Drupal::config('hello_world.settings');
+        return array(
+            'name' => $default_config->get('hello.name')
+        );
+    }
 } 
