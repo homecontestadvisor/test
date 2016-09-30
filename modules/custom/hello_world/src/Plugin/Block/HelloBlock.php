@@ -49,7 +49,8 @@ class HelloBlock extends BlockBase implements BlockPluginInterface{
             '#type' => 'textfield',
             '#title' => $this->t('Who'),
             '#description' => $this->t('Who do you want to say hello to?'),
-            '#default_value' => isset($config['name']) ? $config['name'] : '',
+            '#default_value' => 'default Value',
+            //'#default_value' => isset($config['name']) ? $config['name'] : '',
         );
 
         return $form;
